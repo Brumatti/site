@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    min-height: 100vh;    
+    font-family: 'Poppins', sans-serif;}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+
+}
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #423940;
+    padding: 0px 15px;
+}
+header .linha{
+    justify-content: space-between;
+    align-items: center;
+}
+header .nome a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+
+}
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+    
+}
+header .navbar ul li a.active::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;   
+}
+.backImg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 400px;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.contact-section{
+  background: black;
+  padding: 80px 0;
+  text-align: center;
+  width: 3000px;
+  padding-top: 200px;
+}
+
+.inner-width{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+
+}
+
+
+.contact-section h1{
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  
+}
+
+.name,.email,.message{
+  background: none;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.name{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+.message{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+.contact-section button{
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.contact-section button:hover{
+  background: #70a1ff;
+  color: #fff;
+}
+
+
+@media screen and (max-width:600px){
+  .name,.email{
+    width: 100%;
+  }
+}
+img{
+    height: 250px;
+    border-radius: 70%;
+}
+.home{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center ;
+}
+.home .full-screen{
+    min-height: 100vh;
+}
+.home .home-content{
+    
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .home-content .block{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.home .home-content .block h1{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
+
+}
+.home .home-content .block h5{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 100px;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
+
+}
+.home .home-content .block h4{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
+
+}
+.home .home-content .block h6{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}
+.home .home-content .block h2{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100px;
+    align-items: center;
+
+}
+/* .form label{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.form input {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+    outline: none;
+}
+.form textarea{
+    display: block;
+    width: 100%;
+    padding: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.form button {
+    background: blue;
+    padding: 10px 25px;
+    margin-top: 10px;
+    color: white;
+    border: 0;
+    font-size: 15px;
+} */
+.formulario {
+    background-color: black;
+}
